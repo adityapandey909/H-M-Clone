@@ -10,72 +10,73 @@
 </head>
 
 <!-- Logo -->
-<header class="header">
+<header class="site-header">
     <div>
-        <img class="img-logo" src="assets/H&M-Logo.svg" alt="logo.svg" />
+        <img class="logo-img" src="assets/H&M-Logo.svg" alt="logo.svg" />
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar-menu">
         <ul>
-            <li>Ladies</li>
-            <li>Men</li>
-            <li>Kids</li>
-            <li>New Arrivals</li>
+            <li><a href="#ladies">Ladies</a></li>
+            <li><a href="#men">Men</a></li>
+            <li><a href="#Kids">Kids</a></li>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
         </ul>
     </nav>
 
-    <!-- Search, Account, Faviourites, Add to cart -->
-    <div class="header-icons">
+    <!-- Search, Account, Favourites, Add to Cart -->
+    <div class="header-actions">
         <i class="fas fa-search" title="Search"></i>
         <i class="fas fa-user" title="Account"></i>
         <i class="fas fa-heart" title="Favourites"></i>
         <i class="fas fa-shopping-bag" title="Cart"></i>
     </div>
 
-    <div class="cart-panel hidden">
-        <h3>Your Shopping cart</h3>
+    <div class="cart-sidebar hidden">
+        <h3>Your Shopping Cart</h3>
         <p>No items yet.</p>
     </div>
-
 </header>
+
 
 <body>
     <main>
         <!-- Page 1 -->
-        <section id="product-1">
+        <section id="ladies" class="section-ladies">
             <div>
                 <img loading="eager"
                     src="https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk19/WS21N-16x9-women-startpage-wk19.jpg?imwidth=4800"
-                    alt class="page-img" fetchpriority="high" />
+                    alt class="img-ladies" fetchpriority="high" />
             </div>
-            <div class="page-space-1">
-                <a class="comment" href="#">
+            <div class="section-space">
+                <a class="link-comment" href="#">
                     <h3>New Arrivals</h3>
                 </a>
-                <a class="comment" href="#">Shop now</a>
+                <a class="link-comment" href="#">Shop now</a>
             </div>
         </section>
         <!-- ENDS HERE -->
 
-        <section>
-            <div class="grid-photo">
+        <!-- Page 2 -->
+        <section id="men" class="section-men">
+            <div class="photo-grid">
                 <div>
                     <img loading="lazy"
                         src="https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk19/DS21J-4x5-women-startpage-wk19.jpg?imwidth=4800"
-                        alt class="page-img2" fetchpriority="auto" />
-                    <div class="grid-comment">
-                        <a class="comment" href="#">Boho chic</a>
-                        <a class="comment" href="#">Shop Now</a>
+                        alt class="img-men-1" fetchpriority="auto" />
+                    <div class="grid-comments">
+                        <a class="link-comment" href="#">Boho chic</a>
+                        <a class="link-comment" href="#">Shop Now</a>
                     </div>
                 </div>
                 <div>
                     <img loading="lazy"
                         src="https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk18/WS21P-startpage-women-wk18-4x5.jpg?imwidth=4800"
-                        alt class="page-img3" fetchpriority="auto" />
-                    <div class="grid-comment">
-                        <a class="comment" href="#">Seasonal Dress</a>
-                        <a class="comment" href="#">Shop Now</a>
+                        alt class="img-men-2" fetchpriority="auto" />
+                    <div class="grid-comments">
+                        <a class="link-comment" href="#">Seasonal Dress</a>
+                        <a class="link-comment" href="#">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -83,116 +84,238 @@
         <!-- ENDS HERE -->
 
         <!-- Page 3 -->
-        <section id="product-3">
-            <div class="grid-comment2">
-                <a class="comment" href="#">New In</a>
-                <a class="comment" href="#">View all</a>
+        <section id="Kids">
+            <div class="kids-header">
+                <a class="kids-link" href="#">New In</a>
+                <a class="kids-link" href="#">View all</a>
             </div>
 
-            <div class="product-grid2">
-                <div class="product">
+            <div class="kids-product-grid">
+                <div class="kids-product">
                     <img alt="Long cotton dress"
                         src="https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/3e/7e/3e7e370dd8958572a51d44c753b8d1f3ff9de3f8.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Strappy dress"
                         src="https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/99/08/99088aa4cabf942b962be6d1af70666eac91c0f2.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="V-neck blouse"
                         src="https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/89/5d/895d4a94522c8e8ce1f77ac83302b34d4666125f.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Shift dress"
                         src="https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/c4/d3/c4d331bb39e43afcee85d52fcb42f09a580da249.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Linen-blend shirt"
                         src="https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=820 820w,
+                            https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/99/30/993071e79d19fa1357798100d50ec22c8b0e3db4.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Flared skirt"
                         src="https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/42/b9/42b9a67c9bd04c868025ad5b1a9e6a2b1e8c1886.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Scalloped fine-knit vest top"
                         src="https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=396 396w,
+                            https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/85/a6/85a6cfb9c5d4d02cf97c641aa74148afa8bb2917.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Balloon-sleeved tunic dress"
                         src="https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/2d/c5/2dc5459a8d656f7d2256eb55b75cb12bb13b567b.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Square sunglasses"
                         src="https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/7d/1e/7d1e3a83772ead3857f00073c8992c45d4b0ac25.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Embroidered slip dress"
                         src="https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=264 264w,
+                            https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/25/e0/25e0207b4c2a50d17f1b4eec79ca3033e9828741.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Broderie anglaise tie-strap dress"
                         src="https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/43/8a/438a09cf4c4c5d6e788d1a394340ca82ed73adbb.jpg?imwidth=1536 1536w
+                        ">
                 </div>
-                <div class="product">
+                <div class="kids-product">
                     <img alt="Scalloped mini dress"
                         src="https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=1536"
-                        srcset="https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=264 264w, https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=396 396w, https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=564 564w, https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=657 657w, https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=768 768w, https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=820 820w, https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=1260 1260w, https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=1536 1536w">
+                        srcset="
+                            https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=264 264w, 
+                            https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=396 396w, 
+                            https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=564 564w, 
+                            https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=657 657w, 
+                            https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=768 768w, 
+                            https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=820 820w, 
+                            https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=1260 1260w, 
+                            https://image.hm.com/assets/hm/30/9b/309beb24f0f39069d7b2156ada4fe63fa3e0f31e.jpg?imwidth=1536 1536w
+                        ">
                 </div>
             </div>
         </section>
 
         <!-- Page 4 -->
-        <section id="product-4">
+        <section id="new-arrivals">
             <div class="category">
                 <div class="product-grid1">
                     <div class="product-card">
                         <img src="https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk19/Tops-2x3_7-CE-Women-wk19.jpg?imwidth=768"
-                            alt="Tops">
+                            alt="Tops" />
                         <div class="card-content">
                             <h2>Tops</h2>
                             <a href="#" class="explore-btn">Explore</a>
                         </div>
                     </div>
+
                     <div class="product-card">
                         <img src="https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk19/Trousers-2x3_2-CE-Women-wk19.jpg?imwidth=768"
-                            alt="Trousers">
+                            alt="Trousers" />
                         <div class="card-content">
                             <h2>Trousers</h2>
                             <a href="#" class="explore-btn">Explore</a>
                         </div>
                     </div>
+
                     <div class="product-card">
                         <img src="https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk19/Dresses-2x3_4-CE-Women-wk19.jpg?imwidth=768"
-                            alt="Dresses">
+                            alt="Dresses" />
                         <div class="card-content">
                             <h2>Dresses</h2>
                             <a href="#" class="explore-btn">Explore</a>
                         </div>
                     </div>
+
                     <div class="product-card">
                         <img alt="Modelimage"
                             src="https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=768"
-                            srcset="https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=264 264w, https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=396 396w, https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=564 564w, https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=657 657w, https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=768 768w, https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=820 820w, https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=1260 1260w, https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=1536 1536w">
+                            srcset="
+                                https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=264 264w,
+                                https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=396 396w,
+                                https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=564 564w,
+                                https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=657 657w,
+                                https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=768 768w,
+                                https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=820 820w,
+                                https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=1260 1260w,
+                                https://image.hm.com/content/dam/global_campaigns/season_01/women/startpage-assets/wk21/Accessories-CE-wk21-v.2.jpg?imwidth=1536 1536w
+                            ">
                         <div class="card-content">
                             <h2>Trousers</h2>
                             <a href="#" class="explore-btn">Explore</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- FOOTER SECTION -->

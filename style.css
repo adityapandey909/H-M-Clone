@@ -4,8 +4,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
-header {
+.site-header {
     display: flex;
     height: 65px;
     background-color: black;
@@ -13,7 +17,7 @@ header {
     justify-content: space-around;
 }
 
-.navbar ul {
+.navbar-menu ul {
     display: flex;
     list-style: none;
     gap: 16px;
@@ -21,23 +25,28 @@ header {
     cursor: pointer;
 }
 
-.navbar li:hover {
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+.navbar-menu a:hover {
     color: red;
     transition: 0.3s;
 }
 
-.rate-tag {
+.site-badge {
     margin-bottom: 20px;
-    ;
     padding-bottom: 200px;
-    position: fixed
+    position: fixed;
 }
 
-.img-logo {
+.logo-img {
     height: 30px;
 }
 
-.header-icons {
+.header-actions {
     color: white;
     display: flex;
     gap: 20px;
@@ -46,12 +55,12 @@ header {
     font-size: 20px;
 }
 
-.header-icons i:hover {
+.header-actions i:hover {
     color: red;
     transition: 0.3s;
 }
 
-.cart-panel {
+.cart-sidebar {
     position: fixed;
     top: 65px;
     right: 0;
@@ -66,60 +75,57 @@ header {
     transform: translateX(100%);
 }
 
-.cart-panel.hidden {
+.cart-sidebar.hidden {
     transform: translateX(100%);
 }
 
-.cart-panel.show {
+.cart-sidebar.show {
     transform: translateX(0%);
 }
-
 /* HEADER ENDS */
 
-/* Page-1 */
-.page-img {
+
+/* Section Ladies */
+.img-ladies {
     width: 100%;
     height: auto;
 }
 
-.page-space-1 {
+.section-space {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 40px;
 }
 
-/* Page 1 Ends */
-
-/* Page 2 */
-.grid-photo {
+/* Section Men */
+.photo-grid {
     display: flex;
 }
 
-.page-img2,
-.page-img3 {
+.img-men-1,
+.img-men-2 {
     display: flex;
     width: 100%;
 }
 
-.comment {
+.link-comment {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.grid-comment {
+.grid-comments {
     display: flex;
     align-items: center;
     height: 60px;
     justify-content: space-evenly;
 }
 
-/* Page 2 ENDS  */
 
-/* Page 3 */
-.grid-comment2 {
+/* Page 3 - Kids Section */
+.kids-header {
     display: flex;
     align-items: center;
     height: 50px;
@@ -127,21 +133,27 @@ header {
     margin: 30px;
 }
 
-.product-grid2 {
+.kids-link {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.kids-product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
     gap: 30px;
-    pad: 20px 40px;
+    padding: 20px 40px;
 }
 
-.product img {
+.kids-product img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
 }
 
-/* Page 3 ENDS  */
 
 /* Page 4 */
 .product-grid1 {

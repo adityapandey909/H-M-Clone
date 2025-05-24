@@ -1,5 +1,5 @@
 const cartIcon = document.querySelector(".fa-shopping-bag");
-const cartPanel = document.querySelector(".cart-panel");
+const cartPanel = document.querySelector(".cart-sidebar");
 const userIcon = document.querySelector(".fa-user");
 
 // Add a click event to the User icon
